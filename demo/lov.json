@@ -1,0 +1,141 @@
+{
+  "lovs": {
+    "CNTRY_O": [{
+      "id": "123456",
+      "value": "INDIA"
+    }, {
+      "id": "4545",
+      "value": "USA"
+    }, {
+      "id": "567r6",
+      "value": "France"
+    }],
+    "BRND_I": [{
+      "id": "BRND-23152",
+      "value": "Martha Stewart"
+    }, {
+      "id": "BRND-14521",
+      "value": "No Brand"
+    }, {
+      "id": "BRND-5930",
+      "value": "Raiph Lauren"
+    }, {
+      "id": "BRND-22790",
+      "value": "Safavieh"
+    }],
+    "BUS_UNIT_C": [{
+      "id": "IMP",
+      "value": "Imported"
+    }, {
+      "id": "MUAI",
+      "value": "Made in the USA and Imported"
+    }, {
+      "id": "8",
+      "value": "GiftCards:Consumer"
+    }, {
+      "id": "6",
+      "value": "NoInventory:Giftwrap"
+    }],
+    "IMP_DSGT_DESC_T": [{
+      "id": "IMP",
+      "value": "Imported"
+    }, {
+      "id": "MUAI",
+      "value": "Made in the USA and Imported"
+    }, {
+      "id": "MUOI",
+      "value": "Made in the USA or Imported"
+    }],
+    "INTD_SELL_CHNL_C": [{
+      "id": "STR",
+      "value": "Sold in Store"
+    }, {
+      "id": "ONLN",
+      "value": "Sold Online"
+    }],
+    "MDSE_CLAS_I": [{
+      "id": "CLAS-066-01",
+      "value": "ACCENT RUGS"
+    }, {
+      "id": "CLAS-066-94",
+      "value": "DISPLAYS"
+    }, {
+      "id": "CLAS_066-09",
+      "value": "KITCHEN RUGS"
+    }],
+    "MDSE_SBCL_I": [{
+      "id": "066-01-01",
+      "value": "20X"
+    }, {
+      "id": "066-01-02",
+      "value": "30X"
+    }, {
+      "id": "066-01-06",
+      "value": "5X7"
+    }],
+    "VEND_SRVC_F": [{
+      "id": "N",
+      "value": "No"
+    }, {
+      "id": "Y",
+      "value": "Yes"
+    }],
+    "ITEM_SERL_F": [{
+      "id": "N",
+      "value": "No"
+    }, {
+      "id": "Y",
+      "value": "Yes"
+    }],
+    "SHIP_EXCL_C": [{
+      "id": "US-AL",
+      "value": "Alabama"
+    }, {
+      "id": "US-AZ",
+      "value": "Arizona"
+    }, {
+      "id": "US_CO",
+      "value": "Colorado"
+    }],
+    "104725": [{
+      "id": "384204",
+      "value": "0 Long"
+    }, {
+      "id": "384983",
+      "value": "0 Petitie"
+    }, {
+      "id": "384205",
+      "value": "0 Short"
+    }],
+    "108595": [{
+      "id": "240495",
+      "value": "Closet"
+    }, {
+      "id": "240494",
+      "value": "Bedroom"
+    }, {
+      "id": "240498",
+      "value": "Dinning Room"
+    }],
+    "108460": [{
+      "id": "441738",
+      "value": "A2 by Aerosoles"
+    }, {
+      "id": "403429",
+      "value": "Band of Outsiders"
+    }, {
+      "id": "403431",
+      "value": "Carolina Herrera"
+    }],
+    "108459": [{
+      "id": "238632",
+      "value": "Global"
+    }, {
+      "id": "252525",
+      "value": "Rustic"
+    }, {
+      "id": "238631",
+      "value": "Modern"
+    }]
+  }
+}

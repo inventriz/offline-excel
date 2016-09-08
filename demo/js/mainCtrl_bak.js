@@ -1,0 +1,208 @@
+(function() {
+	function MainCtrl() {
+	  var items = [[]];
+	  
+	  this.data = items;
+	  this.col = [
+		{
+		  data: 'id',
+		  title: 'ID',
+		  readOnly: true
+		},
+		{
+		  data: 'price',
+		  title: 'Price',
+		  readOnly: false
+		}
+	  ];
+	  
+	  this.columns = [{
+		  label: "Product Title",
+		  isMandatory: true,
+		  isSelect: false,
+		  isMultiValue: false,
+		  stepId: "PROD_TITL_N",
+		  editedBy: "V",
+		  default: null
+		}, {
+		  label: "Brand",
+		  isMandatory: true,
+		  isSelect: true,
+		  isMultiValue: false,
+		  stepId: "BRND_I",
+		  editedBy: "M",
+		  default: null,
+		  values : [
+				{
+					"id": "123456",
+					"value": "INDIA"
+				}, {
+					"id": "4545",
+					"value": "USA"
+				}, {
+					"id": "567r6",
+					"value": "France"
+				}
+		  ]
+		}, {
+		  label: "Business Unit",
+		  isMandatory: true,
+		  isSelect: true,
+		  isMultiValue: false,
+		  stepId: "BUS_UNIT_C",
+		  editedBy: "M",
+		  default: null
+		}, {
+		  label: "Cost",
+		  isMandatory: true,
+		  isSelect: false,
+		  isMultiValue: false,
+		  stepId: "COST_A",
+		  editedBy: "V",
+		  default: null
+		}, {
+		  label: "Import Designation",
+		  isMandatory: true,
+		  isSelect: true,
+		  isMultiValue: false,
+		  stepId: "IMP_DSGT_DESC_T",
+		  editedBy: "V",
+		  default: null
+		}, {
+		  label: "Intended Selling Channel",
+		  isMandatory: true,
+		  isSelect: true,
+		  isMultiValue: true,
+		  stepId: "INTD_SELL_CHNL_C",
+		  editedBy: "V",
+		  default: null
+		}, {
+		  label: "Merchandise Class",
+		  isMandatory: true,
+		  isSelect: true,
+		  isMultiValue: false,
+		  stepId: "MDSE_CLAS_I",
+		  editedBy: "M",
+		  default: null
+		}, {
+		  label: "Merchandise Subclass",
+		  isMandatory: true,
+		  isSelect: true,
+		  isMultiValue: false,
+		  stepId: "MDSE_SBCL_I",
+		  editedBy: "M",
+		  default: null
+		}, {
+		  label: "Vendor Serviced Flag",
+		  isMandatory: false,
+		  isSelect: true,
+		  isMultiValue: false,
+		  stepId: "VEND_SRVC_F",
+		  editedBy: "V",
+		  default: null
+		}, {
+		  label: "Size",
+		  isMandatory: false,
+		  isSelect: true,
+		  isMultiValue: false,
+		  stepId: "SIZE_I",
+		  editedBy: "V",
+		  default: null
+		}, {
+		  label: "Maximum Preorder Quantity",
+		  isMandatory: false,
+		  isSelect: false,
+		  isMultiValue: false,
+		  stepId: "MAX_PRE_ORD_Q",
+		  editedBy: "M",
+		  default: null
+		}, {
+		  label: "License Property Personality",
+		  isMandatory: false,
+		  isSelect: false,
+		  isMultiValue: false,
+		  stepId: "LIC_ASSET_I",
+		  editedBy: "V",
+		  default: null
+		}, {
+		  label: "Serialization Required",
+		  isMandatory: false,
+		  isSelect: true,
+		  isMultiValue: false,
+		  stepId: "ITEM_SERL_F",
+		  editedBy: "V",
+		  default: "No"
+		}, {
+		  label: "Cost Per",
+		  isMandatory: false,
+		  isSelect: false,
+		  isMultiValue: false,
+		  stepId: "COST_Q",
+		  editedBy: "V",
+		  default: "1"
+		}, {
+		  label: "Shipping Exclusions",
+		  isMandatory: false,
+		  isSelect: true,
+		  isMultiValue: true,
+		  stepId: "SHIP_EXCL_C",
+		  editedBy: "V",
+		  default: null
+		}, {
+		  label: "Product Length",
+		  isMandatory: true,
+		  isSelect: false,
+		  isMultiValue: false,
+		  stepId: "102627",
+		  editedBy: "V",
+		  default: null
+		}, {
+		  label: "ABN Size",
+		  isMandatory: true,
+		  isSelect: true,
+		  isMultiValue: true,
+		  stepId: "104725",
+		  editedBy: "V",
+		  default: null
+		}, {
+		  label: "Room of Use",
+		  isMandatory: false,
+		  isSelect: true,
+		  isMultiValue: true,
+		  stepId: "108595",
+		  editedBy: "M",
+		  default: null
+		}, {
+		  label: "Designer or Design",
+		  isMandatory: false,
+		  isSelect: true,
+		  isMultiValue: false,
+		  stepId: "108460",
+		  editedBy: "V",
+		  default: null
+		}, {
+		  label: "Decor Style",
+		  isMandatory: false,
+		  isSelect: true,
+		  isMultiValue: true,
+		  stepId: "108459",
+		  editedBy: "M",
+		  default: null
+		}
+
+	  ];
+	  
+	  this.addColumn = function() {
+		this.columns.push({});
+	  };
+	  this.removeColumn = function() {
+		this.columns.pop();
+	  };
+	}
+
+	MainCtrl.$inject = [];
+
+	angular
+	  .module('app', ['ngHandsontable'])
+	  .controller('MainCtrl', MainCtrl);
+}());
