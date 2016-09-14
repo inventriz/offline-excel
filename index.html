@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Offline Excel</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/handsontable.full.css">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body ng-cloak="">
+    <div>
+        <div class="container" style="margin-top:20px;">
+            <div data-ng-view="" id="ng-view" class="slide-animation"></div>
+
+        </div>
+    </div>
+</body>
+    <!-- Libs -->
+<script src="lib/angular.min.js"></script>
+<script src="lib/angular-route.min.js"></script>
+<script src="lib/angular-animate.min.js"></script>
+<script type="text/javascript" src="lib/handsontable.full.js"></script>
+<script type="text/javascript" src="lib/ngHandsontable.min.js"></script>
+<script src="app/app.js"></script>
+<script src="app/data.js"></script>
+<script src="app/gridCtrl.js"></script>
+
+</html>
