@@ -1,7 +1,14 @@
-<hot-table
-      id="demoTable"
-      datarows="xd"
-      settings="{
-         colHeaders: xdColumns
-      }">
+<hot-table 
+	col-headers="true" 
+	datarows="data">
+	
+	<div ng-repeat="column in resultData">   <!--title="column.label"</hot-column-->
+	<hot-column ng-if="!column.isSelect" title="column.label"></hot-column>
+	<hot-column ng-if="column.isSelect"  
+				 title="column.label"
+				 data="{{column.label}}"
+				 type="'autocomplete'">
+		<hot-autocomplete datarows="value in columns.values"></hot-autocomplete>
+	</hot-column>
+	</div>
 </hot-table>
