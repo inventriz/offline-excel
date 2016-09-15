@@ -1,8 +1,11 @@
 <hot-table 
 	col-headers="true" 
-	datarows="data">
+	settings="settings"
+	row-headers="true"
+	datarows="data"
+	on-after-selection="onAfterSelection">
 	
-	<div ng-repeat="column in resultData">   <!--title="column.label"</hot-column-->
+	<div ng-repeat="column in resultData">
 	<hot-column ng-if="!column.isSelect" title="column.label"></hot-column>
 	<hot-column ng-if="column.isSelect"  
 				 title="column.label"
