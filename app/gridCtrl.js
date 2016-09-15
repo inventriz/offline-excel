@@ -13,13 +13,22 @@ app.controller('gridCtrl', function ($scope, $rootScope, $routeParams, $location
 	      console.log('onAfterInit call');
 	    },
 	    onAfterSelectionEnd: function(index, amount) {
-	      console.log('onAfterSelectionEnd call => index:' + index + ', amount: ' + amount);
+	    	var stepId = $scope.resultData[amount].stepId;
+	    	var isSelect = $scope.resultData[amount].isSelect;
+	    	if(isSelect === true){
+		    	Data.post('lov.json', {
+		            data: stepId
+		        }).then(function (results) {
+		            console.log(results);
+		        });	    		
+	    	}
+	      	console.log('onAfterSelectionEnd call => index:' + index + ', amount: ' + amount);
 	    },
 	    onAfterCreateRow: function(index, amount) {
-	      console.log('onAfterCreateRow call => index:' + index + ', amount: ' + amount);
+	      	console.log('onAfterCreateRow call => index:' + index + ', amount: ' + amount);
 	    },
 	    onAfterRemoveRow: function(index, amount) {
-	      console.log('onAfterRemoveRow call => index:' + index + ', amount: ' + amount);
+	      	console.log('onAfterRemoveRow call => index:' + index + ', amount: ' + amount);
 	    }
     }
 

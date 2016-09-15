@@ -9,6 +9,7 @@
 	<hot-column ng-if="!column.isSelect" title="column.label"></hot-column>
 	<hot-column ng-if="column.isSelect"  
 				 title="column.label"
+				 stepId="column.stepId"
 				 data="{{column.label}}"
 				 type="'autocomplete'">
 		<hot-autocomplete datarows="value in columns.values"></hot-autocomplete>
